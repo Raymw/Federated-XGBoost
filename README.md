@@ -8,7 +8,7 @@ This repository is the implementation of the paper " [The Tradeoff Between Priva
 Dataset used in this experiment is from kaggle : [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 
 The aggregated data in the process of data aggregation has been put into the Data folder. Inside each aggregated data folder, there are three files.   `creditcard1_train` and `creditcard1_test` is used for training and in server node. `creditcard2` and  `credit2_for_update` are the dataset in local node.
- `credit2_for_update` is the data `creditcard2` after the process of federated update. The index of each aggregated data folder is the sequence we want to set in process of  finding split.
+ `credit2_for_update` is the data `creditcard2` after the process of federated update. The index of each aggregated data folder is the cluster number we want to set in process of finding split.
 
 ## Run
 
