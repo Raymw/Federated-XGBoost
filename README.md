@@ -27,4 +27,18 @@ We add parameter `fl_split` in federated XGBoost, which is used to set the clust
 Federated model is produced by 
 > /xgboost/dmlc-core/tracker/dmlc-submit --cluster mpi --num-workers 2 python main.py
 
-Since the dataset is small, we run it locally and set only two nodes (num-workers =2) to simulate the experiments. You can change nodes parameters according to your enviroment.
+Since the dataset is small, we run it locally and set  two nodes (num-workers =2) to simulate the experiments. You can change  parameters according to your enviroment.
+## 
+For now, if you want to try it on new dataset, you have to do the process of data aggregation and federated update. Over the next, we would try to experiment it on large dataset and explore some new methods to improve these two processes.
+
+
+Welcome to contact us if you have any quastion about the paper or code. 
+
+## Reference
+
+>@article{yang2019tradeoff,
+  title={The Tradeoff Between Privacy and Accuracy in Anomaly Detection Using Federated XGBoost},
+  author={Yang, Mengwei and Song, Linqi and Xu, Jie and Li, Congduan and Tan, Guozhen},
+  journal={arXiv preprint arXiv:1907.07157},
+  year={2019}
+}
