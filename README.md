@@ -16,7 +16,7 @@ We are implmenting the horizontal federated learning scenario based on [XGBoost]
 
 Firstly, download the XGBoost package following the [XGBoost official documentation](https://xgboost.readthedocs.io/en/latest/).  In order to achieve the federated framework of our paper, there are two files that need to be modified. File `param.h` and `updater_histmaker.cc` have been put into folder Code. Exact location is in `xgboost/python-package/xgboost/src/tree`.
 
-Main changes are to set a new parameter for our aggregated sequence in file `param.h` (Line 99 and 103) and add the corresponding way of creating split set in the paper (changes are in `updater_histmaker.cc` Line 297, 315 and 493). Remember to recompile it after adding changes.
+Main change is to set a new parameter for our aggregated sequence in file `param.h` (Line 99 and 103) and add the corresponding way of creating split set in the paper (changes are in `updater_histmaker.cc` Line 297, 315 and 493). Remember to recompile it after adding changes.
 
 Some other steps may also need to be done before running.  Comment Line 11、53 and 54 in file `submit.py` because there are some errors when running code. Also, we need XGBoost rabit to achieve communications between nodes. So, `cd  /xgboost/rabit` and do `make`.
 
